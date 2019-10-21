@@ -6,5 +6,7 @@ public class Anim_Jump : Animation_Base
     public override void getAnimation(Controller Actor)
     {
         //logic for playing idle animations here
+        if (Input.GetKeyDown(KeyCode.Space))
+            Debug.Log("Jump");
     }
 }

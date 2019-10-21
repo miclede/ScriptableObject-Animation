@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3d879e04e217a4fb4aa858c7578056, type: 3}
   m_Name: Processor_Animation
   m_EditorClassIdentifier: 
+  Anims:
+  - {fileID: 11400000, guid: f36140658a44b2840b52fbcf67a65d0a, type: 2}
+  - {fileID: 11400000, guid: 644f7c0a76c9e8b46b4000e9d1dc070e, type: 2}
+  - {fileID: 11400000, guid: 0d655366a9539b34fb7518406c1741e0, type: 2}
