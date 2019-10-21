@@ -1,7 +1,7 @@
 # ScriptableObject-Animation
 Animate using ScriptableObjects in Unity.
 
-ScriptableObjects are relatively new in Unity and I wanted to find some interesting ways to use them. So I made a system that plays animations from them.
+ScriptableObjects are relatively new in Unity and I wanted to find some interesting ways to use them. So I made a system that plays animations from them. This case is for animations but the structure can be used in many things.
 
 How it works:
 1. Create a Main_Processor ScriptableObject that will store and tell the animations themselves to play.
