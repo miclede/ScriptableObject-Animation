@@ -14,5 +14,3 @@ In Practice:
 2. Setup ScriptableObject
 3. Setup Controller
 4. Play!
-
-[Unite Package Download](https://github.com/miclede/ScriptableObject-Animation/raw/master/SimpleScriptableObjectAnimation.unitypackage)
