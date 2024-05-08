@@ -18,3 +18,5 @@ In Practice:
 3. Create animations; inherit from PlayerAnimationBase //(Move, Shoot, Jump, ect.)
 4. Create ScriptableObject of the animation.
 //if not using #UNITY_EDITOR code to add animations to the processor with a context menu you will have to drag them to the processor
+
+[Unite Package Download](https://github.com/miclede/ScriptableObject-Animation/blob/master/SimpleScriptableObjectAnimation.unitypackage)
