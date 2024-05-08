@@ -1,20 +1,18 @@
 # ScriptableObject-Animation
+Updated for 2023.2.18f1
+
 Animate using ScriptableObjects in Unity.
 
-ScriptableObjects are relatively new in Unity and I wanted to find some interesting ways to use them. So I made a system that plays animations from them. This case is for animations but the structure can be used in many things.
+This is a simple system meant to help assist with quickly playing simple animations on objects in scene.
+It is not meant to replace the more complex animation trees of Mecanim, but instead allow for quick implementaion of simple reusable animations via scriptable objects and the Animation componenet.
 
 How it works:
-1. Create a Main_Processor ScriptableObject that will store and tell the animations themselves to play.
-2. Create a Base logic_processor that all other logic processors will inherit from for communication with the Main_Processor.
-    -Possible automatically add all logic_processors to tha Main_Processor using #Unity_Editor code so you don't have to find and drag          them in everytime to the Main_Processor
-3. Create individual logic processors that collects information and works with (in this example) an animator to play animations.
-4. Take the individual logic processors and add them to the Main Processor's storage (a List in this example) for play.
-5. Add the Main Processor to a Character Controller.
-6. Call Main_Processor.Process (AnimationProcessor.GetAnimation) (LateUpdate for animations)
+Animation Clips are stored on a 'Anim' scriptable object, 'Anim' can be adjusted to your specific project needs (i.e. looping, breakpoints, blending), the clips are passed to a referenced Animation component (there is no need to assign the animations manually) and assigned to the active clip. How the animations play and how to assign the correct clip come down to the specific controller in your project, however for examples sake I have included an ActorController that handles this task via UnityEvents.
 
 In Practice:
-1. PlayerAnimation_Processor is made.
-2. PlayerAnimationBase is made.
-3. Create animations; inherit from PlayerAnimationBase //(Move, Shoot, Jump, ect.)
-4. Create ScriptableObject of the animation.
-//if not using #UNITY_EDITOR code to add animations to the processor with a context menu you will have to drag them to the processor
+1. Setup Clip
+2. Setup ScriptableObject
+3. Setup Controller
+4. Play!
+
+[Unite Package Download](https://github.com/miclede/ScriptableObject-Animation/raw/master/SimpleScriptableObjectAnimation.unitypackage)
